@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:background="@drawable/loading_back_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <RelativeLayout
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="centerInside"
+                app:tint="@color/colorPrimary" />
+            <!-- android:src="@drawable/app_icon_new"-->
+            <ProgressBar
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:indeterminateDrawable="@drawable/loading_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/progressMessage"
+            style="@style/text_12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/loading"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</LinearLayout>

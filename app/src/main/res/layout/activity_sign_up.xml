@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activities.SignUpActivity">
+
+    <include layout="@layout/appbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+
+            <TextView
+                style="@style/text_14_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/autarky_technologies"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                style="@style/text_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="@color/color_929398" />
+
+            <RelativeLayout
+                android:id="@+id/rlProfilePic"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ciProfilePicRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_user"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="@dimen/_2sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_circle_white"
+                    android:src="@drawable/ic_add_circle" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etFirstNameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_editext"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="@dimen/_15sdp"
+                android:hint="@string/enter_first_name"
+                android:lines="1"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/color_929398"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etLastNameReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_editext"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="@dimen/_15sdp"
+                android:hint="@string/enter_last_name"
+                android:lines="1"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/color_929398"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etEmailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_editext"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="@dimen/_15sdp"
+                android:hint="@string/enter_email_address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:lines="1"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/color_929398"
+                tools:ignore="Autofill" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_editext"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_mobile" />
+
+                <TextView
+                    style="@style/text_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/_91"
+                    android:textColor="@color/colorWhite"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/etMobileReg"
+                    android:hint="@string/enter_mobile_number"
+                    android:inputType="phone"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:lines="1"
+                    android:textColorHint="@color/color_929398"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnRegister"
+                style="@style/text_14_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_border_primary"
+                android:drawablePadding="@dimen/_15sdp"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

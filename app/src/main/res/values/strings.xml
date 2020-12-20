@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Autarky</string>
+    <string name="from">From</string>
+    <string name="autarky_technologies">Autarky Technologies</string>
+
+    <!--Facebook Key-->
+    <string name="facebook_app_id">705895926660499</string>
+    <string name="fb_login_protocol_scheme">fb705895926660499</string>
+
+
+    <!--camera string-->
+    <string name="select_Action">Select Action</string>
+    <string name="select_photo_from_gallery">Select photo from gallery</string>
+    <string name="capture_photo_from_camera">Capture photo from camera</string>
+    <string name="select_Image">Select Image</string>
+    <string name="loading">Loading…</string>
+
+    <!--Internet permission text-->
+    <string name="net_connection">Please check your internet connection</string>
+
+    <!--image constant-->
+    <string name="splash_bg">splash_bg</string>
+    <string name="back_bg">back_bg</string>
+    <string name="facebook_bg">facebook_bg</string>
+    <string name="google_bg">google_bg</string>
+    <string name="mobile_bg">mobile_bg</string>
+    <string name="logo_bg">logo_bg</string>
+    <string name="background_bg">background_bg</string>
+
+
+    <string name="sign_in_using">Sign in using</string>
+    <string name="sign_in_other_account">Sign in other account</string>
+    <string name="terms">Terms</string>
+    <string name="policy">Policy</string>
+    <string name="login_means_agree_to">Sign in by accepting</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_first_name">First Name</string>
+    <string name="enter_last_name">Last Name</string>
+    <string name="enter_email_address">Email Address</string>
+    <string name="enter_mobile_number">Mobile Number</string>
+    <string name="otp">OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="_91">+91</string>
+    <string name="and">and</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="devices">Devices</string>
+    <string name="events">Events</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="device_image">device_image</string>
+    <string name="control">Controls</string>
+    <string name="sit_back_amp_relax_while_we_verify_your_mobile_number"><![CDATA[Sit back & Relax! while we verify your mobile number]]></string>
+    <string name="enter_the_otp_below_in_case_if_we_fail_to_detect_the_sms_automatically">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="enter_otp">OTP</string>
+    <string name="submit">Submit</string>
+    <string name="login_with_mobile_number">Login with mobile number</string>
+    <string name="valid_number">Please enter valid number</string>
+
+    <string name="valid_mobilenumber">Please enter valid mobile number</string>
+    <string name="valid_email">Please enter valid email</string>
+    <string name="userName_empty">Please enter first name</string>
+    <string name="lastName_empty">Please enter last name</string>
+    <string name="logout">Logout</string>
+
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="something_went_wrong_please_try_again_later">Something went wrong! Please try again.</string>
+    <string name="add_device">Add Device</string>
+
+</resources>
